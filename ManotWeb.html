@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html dir = "rtl">
+	<div class ="main">
+	<div class="title">
+<head class = "title">
+	<title>מחשבון שיטת המנות</title>
+	
+	<link rel = "styleSheet"  href = "manotDesign.css">
+	
+	<div class="title">
+	<h1>מחשבון שיטת המנות</h1>
+
+	<h2> שיטת המנות היא שיטה להורדת ציון בעקבות היעדרויות משיעורים היעדרות של עד 15% מהשיעורים - לא תגרום להפחתה בציון, גם אם ההיעדרות לא מוצדקת.
+		בעזרת מחשבון זה ניתן לראות את כמות ההיעדרויות שניתן לעשות ללא הורדה בציון</h2>
+	</div>
+</head>
+</div>
+<body>
+	
+	
+	<br>
+	<br>
+
+
+	<h2>חשב</h2>
+	<form>
+		<input type = "number" name = "n" style="width: 70px;" class = "first">
+		<br>
+		<br>
+		<button type="button" onclick="newFunction()" class="button">חשב</button>
+		<br> 
+		<br>
+		 <input type="text" id="resultTextBox"  style="width: 70px;" class = "first"> :תוצאה
+	</form>
+	<script>
+		function newFunction(){
+		
+		let number = document.forms[0]["n"].value
+		
+		
+
+		let res = howManyTimesCanYouBeAbsent(number)
+		
+		
+
+		document.getElementById('resultTextBox').value = res;
+
+		return false;
+		}
+		function howManyTimesCanYouBeAbsent(number)
+		{
+			return number * Math.trunc(27 * 0.15);
+
+		}
+	</script>
+
+	<br>
+	<br>
+	<br>
+
+
+
+
+<form onsubmit="return processForm()">
+		<h2> הכנס מערכת</h2>
+	<table>
+		<tr>
+			<td>ראשון</td>
+			<td>שני</td>
+			<td>שלישי</td>
+			<td>רביעי</td>
+			<td>חמישי</td>
+			<td>שישי</td>
+		</tr>
+			<!-- Row 1 -->
+			<tr>
+				<td><input type="text" name="matrix-cell-1"></td>
+				<td><input type="text" name="matrix-cell-2"></td>
+				<td><input type="text" name="matrix-cell-3"></td>
+				<td><input type="text" name="matrix-cell-4"></td>
+				<td><input type="text" name="matrix-cell-5"></td>
+				<td><input type="text" name="matrix-cell-6"></td>
+			</tr>
+			
+			<!-- Row 2 -->
+			<tr>
+				<td><input type="text" name="matrix-cell-7"></td>
+				<td><input type="text" name="matrix-cell-8"></td>
+				<td><input type="text" name="matrix-cell-9"></td>
+				<td><input type="text" name="matrix-cell-10"></td>
+				<td><input type="text" name="matrix-cell-11"></td>
+				<td><input type="text" name="matrix-cell-12"></td>
+			</tr>
+			
+			<!-- Row 3 -->
+			<tr>
+				<td><input type="text" name="matrix-cell-13"></td>
+				<td><input type="text" name="matrix-cell-14"></td>
+				<td><input type="text" name="matrix-cell-15"></td>
+				<td><input type="text" name="matrix-cell-16"></td>
+				<td><input type="text" name="matrix-cell-17"></td>
+				<td><input type="text" name="matrix-cell-18"></td>
+			</tr>
+			
+			<!-- Row 4 -->
+			<tr>
+				<td><input type="text" name="matrix-cell-19"></td>
+				<td><input type="text" name="matrix-cell-20"></td>
+				<td><input type="text" name="matrix-cell-21"></td>
+				<td><input type="text" name="matrix-cell-22"></td>
+				<td><input type="text" name="matrix-cell-23"></td>
+				<td><input type="text" name="matrix-cell-24"></td>
+			</tr>
+			<!-- Row 5 -->
+		<tr>
+			<td><input type="text" name="matrix-cell-25"></td>
+			<td><input type="text" name="matrix-cell-26"></td>
+			<td><input type="text" name="matrix-cell-27"></td>
+			<td><input type="text" name="matrix-cell-28"></td>
+			<td><input type="text" name="matrix-cell-29"></td>
+			<td><input type="text" name="matrix-cell-30"></td>
+		</tr>
+		
+		<!-- Row 6 -->
+		<tr>
+			<td><input type="text" name="matrix-cell-31"></td>
+			<td><input type="text" name="matrix-cell-32"></td>
+			<td><input type="text" name="matrix-cell-33"></td>
+			<td><input type="text" name="matrix-cell-34"></td>
+			<td><input type="text" name="matrix-cell-35"></td>
+			<td><input type="text" name="matrix-cell-36"></td>
+		</tr>
+		
+		<!-- Row 7 -->
+		<tr>
+			<td><input type="text" name="matrix-cell-37"></td>
+			<td><input type="text" name="matrix-cell-38"></td>
+			<td><input type="text" name="matrix-cell-39"></td>
+			<td><input type="text" name="matrix-cell-40"></td>
+			<td><input type="text" name="matrix-cell-41"></td>
+			<td><input type="text" name="matrix-cell-42"></td>
+		</tr>
+		
+		<!-- Row 8 -->
+		<tr>
+			<td><input type="text" name="matrix-cell-43"></td>
+			<td><input type="text" name="matrix-cell-44"></td>
+			<td><input type="text" name="matrix-cell-45"></td>
+			<td><input type="text" name="matrix-cell-46"></td>
+			<td><input type="text" name="matrix-cell-47"></td>
+			<td><input type="text" name="matrix-cell-48"></td>
+		</tr>
+		<!-- Row 9 -->
+		<tr>
+			<td><input type="text" name="matrix-cell-49"></td>
+			<td><input type="text" name="matrix-cell-50"></td>
+			<td><input type="text" name="matrix-cell-51"></td>
+			<td><input type="text" name="matrix-cell-52"></td>
+			<td><input type="text" name="matrix-cell-53"></td>
+			<td><input type="text" name="matrix-cell-54"></td>
+		</tr>
+	</table>
+	<br>
+	<button type="button" onclick="processMatrix()" class="button">calculate</button>
+	<br>
+	
+	
+	
+
+	</table>
+	
+</form>
+
+<script>
+	function processMatrix() {
+		// Get the values of the matrix cells
+		let cell1 = document.forms[1]["matrix-cell-1"].value;
+		let cell2 = document.forms[1]["matrix-cell-2"].value;
+		let cell3 = document.forms[1]["matrix-cell-3"].value;
+		let cell4 = document.forms[1]["matrix-cell-4"].value;
+		let cell5 = document.forms[1]["matrix-cell-5"].value;
+		let cell6 = document.forms[1]["matrix-cell-6"].value;
+		let cell7 = document.forms[1]["matrix-cell-7"].value;
+		let cell8 = document.forms[1]["matrix-cell-8"].value;
+		let cell9 = document.forms[1]["matrix-cell-9"].value;
+		let cell10 = document.forms[1]["matrix-cell-10"].value;
+		let cell11 = document.forms[1]["matrix-cell-11"].value;
+		let cell12 = document.forms[1]["matrix-cell-12"].value;
+		let cell13 = document.forms[1]["matrix-cell-13"].value;
+		let cell14 = document.forms[1]["matrix-cell-14"].value;
+		let cell15 = document.forms[1]["matrix-cell-15"].value;
+		let cell16 = document.forms[1]["matrix-cell-16"].value;
+		let cell17 = document.forms[1]["matrix-cell-17"].value;
+		let cell18 = document.forms[1]["matrix-cell-18"].value;
+		let cell19 = document.forms[1]["matrix-cell-19"].value;
+		let cell20 = document.forms[1]["matrix-cell-20"].value;
+		let cell21 = document.forms[1]["matrix-cell-21"].value;
+		let cell22 = document.forms[1]["matrix-cell-22"].value;
+		let cell23 = document.forms[1]["matrix-cell-23"].value;
+		let cell24 = document.forms[1]["matrix-cell-24"].value;
+		let cell25 = document.forms[1]["matrix-cell-25"].value;
+		let cell26 = document.forms[1]["matrix-cell-26"].value;
+		let cell27 = document.forms[1]["matrix-cell-27"].value;
+		let cell28 = document.forms[1]["matrix-cell-28"].value;
+		let cell29 = document.forms[1]["matrix-cell-29"].value;
+		let cell30 = document.forms[1]["matrix-cell-30"].value;
+		let cell31 = document.forms[1]["matrix-cell-31"].value;
+		let cell32 = document.forms[1]["matrix-cell-32"].value;
+		let cell33 = document.forms[1]["matrix-cell-33"].value;
+		let cell34 = document.forms[1]["matrix-cell-34"].value;
+		let cell35 = document.forms[1]["matrix-cell-35"].value;
+		let cell36 = document.forms[1]["matrix-cell-36"].value;
+		let cell37 = document.forms[1]["matrix-cell-37"].value;
+		let cell38 = document.forms[1]["matrix-cell-38"].value;
+		let cell39 = document.forms[1]["matrix-cell-39"].value;
+		let cell40 = document.forms[1]["matrix-cell-40"].value;
+		let cell41 = document.forms[1]["matrix-cell-41"].value;
+		let cell42 = document.forms[1]["matrix-cell-42"].value;
+		let cell43 = document.forms[1]["matrix-cell-43"].value;
+		let cell44 = document.forms[1]["matrix-cell-44"].value;
+		let cell45 = document.forms[1]["matrix-cell-45"].value;
+		let cell46 = document.forms[1]["matrix-cell-46"].value;
+		let cell47 = document.forms[1]["matrix-cell-47"].value;
+		let cell48 = document.forms[1]["matrix-cell-48"].value;
+		let cell49 = document.forms[1]["matrix-cell-49"].value;
+		let cell50 = document.forms[1]["matrix-cell-50"].value;
+		let cell51 = document.forms[1]["matrix-cell-51"].value;
+		let cell52 = document.forms[1]["matrix-cell-52"].value;
+		let cell53 = document.forms[1]["matrix-cell-53"].value;
+		let cell54 = document.forms[1]["matrix-cell-54"].value;
+		// Create a 2D array from the cell values
+		let mat = [				[cell1, cell2, cell3, cell4, cell5, cell6, cell7, cell8, cell9],
+			[cell10, cell11, cell12, cell13, cell14, cell15, cell16, cell17, cell18],
+			[cell19, cell20, cell21, cell22, cell23, cell24, cell25, cell26, cell27],
+			[cell28, cell29, cell30, cell31, cell32, cell33, cell34, cell35, cell36],
+			[cell37, cell38, cell39, cell40, cell41, cell42, cell43, cell44, cell45],
+			[cell46, cell47, cell48, cell49, cell50, cell51, cell52, cell53, cell54]
+		];
+		
+		// Call the howManySameWords function and store the result
+		let result = howManySameWords(mat);
+		
+	
+		// Display the result on the page
+		document.body.innerHTML += "<br>" + result;
+		
+		// Return false to prevent the form from being submitted
+		return false;
+	}
+	
+	function howManySameWords(mat) {
+		let usedWords = "";
+		let result = "";
+		for (let i = 0; i < mat.length; i++) {
+		  for (let j = 0; j < mat[i].length; j++) {
+			if (!usedWords.includes(mat[i][j])) {
+			  result += mat[i][j] +" " + howManyInMat(mat, mat[i][j]) + "------";
+			  usedWords += mat[i][j];
+			}
+		  }
+		}
+		return result;
+	}
+	
+	function howManyInMat(mat, word) {
+		let count = 0;
+		for (let i = 0; i < mat.length; i++) {
+		  for (let j = 0; j < mat[i].length; j++) {
+			if (mat[i][j] === word) {
+			  count++;
+			}
+		  }
+		}
+		 
+		return count * Math.trunc((27*0.15));
+	}
+</script>
+	
+
+</body>
+</div>
+</html>
